@@ -1,4 +1,4 @@
-﻿
+﻿// 1й способ
 /*int number = Random3xNumber();
 
 Console.WriteLine("Случайное число: " + number);
@@ -14,7 +14,9 @@ int Random3xNumber()
 }*/
 
 
-int number = Random3xNumber();
+
+// 2й способ
+/*int number = Random3xNumber();
 
 Console.WriteLine("Случайное число: " + number);
 
@@ -53,4 +55,15 @@ int Find2Digit(int number)
 int Random3xNumber()
 {
     return new Random().Next(100, 1000);
-}
+}*/
+
+
+
+// 3й способ
+int number = new Random().Next(100, 1000);
+int digit3 = number % 10;
+int accum = number / 100;
+int digit1 = accum * 10;
+int onethree = digit1 + digit3;
+Console.WriteLine("Случайное число: " + number);
+Console.Write("1and3 number: " + onethree);
