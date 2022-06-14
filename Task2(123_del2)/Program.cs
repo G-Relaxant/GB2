@@ -62,8 +62,7 @@ int Random3xNumber()
 // 3й способ
 int number = new Random().Next(100, 1000);
 int digit3 = number % 10;
-int accum = number / 100;
-int digit1 = accum * 10;
-int onethree = digit1 + digit3;
+int digit1 = number / 100;
+int onethree = digit1 * 10 + digit3;
 Console.WriteLine("Случайное число: " + number);
 Console.Write("1and3 number: " + onethree);
