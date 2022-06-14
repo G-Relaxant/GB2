@@ -1,7 +1,8 @@
-﻿Console.Write("Введите число: ");
-int number1 = Convert.ToInt32(Console.ReadLine());
-int divrem7 = number1 % 7;
-int divrem23 = number1 % 23;
+﻿//VARIANT 1
+/*Console.Write("Введите число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+int divrem7 = number % 7;
+int divrem23 = number % 23;
 if(divrem7 == 0)
 {
     if(divrem23 == 0)
@@ -16,4 +17,20 @@ if(divrem7 == 0)
 else
     {
         Console.WriteLine("Нет, не кратно");
-    }
+    }*/
+
+
+
+//VARIANT 2
+Console.Write("Введите число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+int divrem7 = number % 7;
+int divrem23 = number % 23;
+if(divrem7 == 0 && divrem23 == 0)
+{
+    Console.WriteLine("Yes, divisible");
+}
+else
+{
+    Console.WriteLine("No, undivisible");
+}
